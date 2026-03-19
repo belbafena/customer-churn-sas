@@ -35,7 +35,36 @@ The model enables organizations to identify high-risk customers and implement ta
 ![Accuracy](accuracy.png)
 
 ### 🔹 F1 Score
-![F1 Score](f1.png)
+![F1 Score](f1 score.png)
 
 ### 🔹 Classification Results
 ![Classification](classification.png)
+
+
+## 🔍 Model Interpretability
+
+### 🔹 Partial Dependence Plot (PD)
+![PD Plot](pd_plot.png)
+
+This plot shows the overall effect of contract type on churn prediction.
+- Month-to-month contracts have higher churn probability
+- Long-term contracts reduce churn risk
+
+---
+
+### 🔹 PD & ICE Plot
+![PD ICE](pd_ice.png)
+
+This visualization combines global and individual-level effects:
+- Confirms consistent churn patterns across customers
+- Shows variation in individual predictions
+
+---
+
+### 🔹 LIME Explanation
+![LIME](lime.png)
+
+This explains a single prediction:
+- Contract type has the strongest influence
+- Internet service and tenure also contribute
+- Provides transparency into model decisions
